@@ -40,7 +40,7 @@
 				</div>
 			</div>
 			<p class="text-base text-gray-600 dark:text-gray-400">
-				Making the community's best AI chat models available to everyone.
+				This Chat UI is deployed against Flagler's Private Endpoints. PHI can be used.
 			</p>
 		</div>
 	</div>
