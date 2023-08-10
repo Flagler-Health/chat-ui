@@ -1,1 +1,1 @@
-web: npm i && npm start
+web: npm i && npm i -g pm2 && npm start
