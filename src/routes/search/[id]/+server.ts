@@ -28,12 +28,12 @@ export async function GET({ params, locals }) {
 		hash: hash,
 	});
 
-	// const userShouldSeeConv =
-	// 	(conv.userId && locals.user?._id.toString() === conv.userId.toString()) || sharedConv !== null;
+	const userShouldSeeConv =
+		(conv.userId && locals.user?._id.toString() === conv.userId.toString()) || sharedConv !== null;
 
-	// if (!userShouldSeeConv) {
-	// 	throw error(403, "You don't have access to the conversation here.");
-	// }
+	if (!userShouldSeeConv) {
+		throw error(403, "You don't have access to the conversation here.");
+	}
 
 	return new Response(JSON.stringify(search), { headers: { "Content-Type": "application/json" } });
 }
